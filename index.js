@@ -2,6 +2,9 @@ const express = require('express'); // Adding Express
     const app = express(); // Initializing Express
     const puppeteer = require('puppeteer'); // Adding Puppeteer
 
+    app.get('/pdf', function(req, res){
+        res.json({'hola': 'gola'});
+    });
     // Wrapping the Puppeteer browser logic in a GET request
     app.get('/', function(req, res) {
 
